@@ -1,0 +1,62 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+    <view>
+    </view>
+  </view>
+</view>
+<view class="myInfo">
+  <view id="Display">
+    <image></image>
+  </view>
+  <view>
+    <navigator url="/pages/Info/Info">
+      <button id="baseInfo">
+        <image id="p1" src="../Picture/home.png"></image>个人信息
+      </button>
+    </navigator>
+    <navigator url="/pages/Info/Info">
+      <button id="acNumSafe" bindtap="">
+        <image id="p1" src="../Picture/home.png"></image>账号安全
+      </button>
+    </navigator>
+    <navigator url="/pages/Info/Info">
+      <button id="Install" bindtap="">
+        <image id="p1" src="../Picture/home.png"></image>设置
+      </button>
+    </navigator>
+    <navigator>
+      <button id="helpAndFeedback" bindtap="">
+        <image id="p1" src="../Picture/home.png"></image>帮助与反馈
+      </button>
+    </navigator>
+    <navigator url="/pages/Info/Info">
+      <button id="About" bindtap="">
+        <image id="p1" src="../Picture/home.png"></image>关于
+      </button>
+    </navigator>
+    <navigator>
+      <button id="logOut" bindtap="">
+        <image id="p1" src="../Picture/home.png"></image>退出登录
+      </button>
+    </navigator>
+  </view>
+</view>

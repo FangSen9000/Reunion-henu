@@ -1,0 +1,89 @@
+{
+  "pages":[
+    "pages/Home/home",
+    "pages/Home/Bbs/bbs",
+    "pages/Home/Map/map",
+    "pages/Home/Activity/activity",
+
+    "pages/Friend/friend",
+    
+    "pages/Service/service",
+
+    "pages/Index/index",
+    "pages/Index/Logs/logs",
+    "pages/Index/Info/info" 
+  ],
+
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText":"首页",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+    {
+      "pagePath": "pages/Home/home",
+      "text": "首页",
+      "iconPath": "./pages/Picture/首页1.png",
+      "selectedIconPath": "./pages/Picture/首页_被选2.png"
+    },
+    {
+      "pagePath": "pages/Friend/friend",
+      "text": "校友",
+      "iconPath": "./pages/Picture/校友.png",
+      "selectedIconPath": "./pages/Picture/校友_被选.png"
+    },
+    {
+      "pagePath": "pages/Service/service",
+      "text": "服务",
+      "iconPath": "./pages/Picture/服务.png",
+      "selectedIconPath": "./pages/Picture/服务_被选.png"
+    },
+    {
+      "pagePath": "pages/Index/index",
+      "text": "我的",
+      "iconPath": "./pages/Picture/用户1.png",
+      "selectedIconPath": "./pages/Picture/用户_被选.png"
+    }
+  ]
+  },
+
+  "subpackages": [
+    {
+      "root": "packageA",
+      "pages": [
+        "pages/Home/home",
+        "pages/Home/Bbs/bbs",
+        "pages/Home/Map/map",
+        "pages/Home/Activity/activity"
+      ]
+    }, 
+    {
+      "root": "packageB",
+      "name": "pack2",
+      "pages": [
+        "pages/Friend/friend"
+      ]
+    },
+    {
+      "root": "packageC",
+      "name": "pack3",
+      "pages": [
+        "pages/Service/service"
+      ]
+    }, {
+      "root": "packageD",
+      "name": "pack4",
+      "pages": [
+        "pages/Index/index",
+        "pages/Index/Logs/logs",
+        "pages/Index/Info/info" 
+      ]
+    }
+  ],
+
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

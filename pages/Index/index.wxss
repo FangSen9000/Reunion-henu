@@ -1,0 +1,64 @@
+/**index.wxss**/
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+}
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+#Display{
+  height: 0px;
+  width: 100%;
+}
+#baseInfo{
+  text-align: left;
+}
+#acNumSafe{
+  text-align: left;
+}
+#Install{
+  text-align: left;
+}
+#helpAndFeedback{
+  text-align: left;
+}
+#About{
+  text-align: left;
+}
+#logOut{
+  text-align:left;
+}
+#p1{
+  position: relative;
+  top: 15rpx;
+  height: 60rpx;
+  width: 60rpx;
+}
+#p2{
+  position: relative;
+  top: 15rpx;
+}
+#p3{
+  position: relative;
+  top: 15rpx;
+}
+#p4{
+  position: relative;
+  top: 15rpx;
+}
+#p5{
+  position: relative;
+  top: 15rpx;
+}
+#p6{
+  position: relative;
+  top: 15rpx;
+}

@@ -1,0 +1,11 @@
+/* pages/Home/Home.wxss */
+
+
+swiper{
+    width: 100%;
+    height: calc(100vm*800/1900);
+}
+image{
+    width: 100%;
+}
+.message{ padding:90rpx 0 70rpx;}

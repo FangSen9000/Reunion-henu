@@ -1,0 +1,8 @@
+<!--pages/components/Tabs/Tabs.wxml-->
+<view class="tabs">
+    <view class="tab_title">
+        <view class="title_item">图书馆</view>
+        <view class="title_item">科学研究</view>
+        <view class="title_item">人才培养</view>
+    </view>
+</view>

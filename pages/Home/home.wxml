@@ -1,0 +1,60 @@
+<!--pages/Home/Home.wxml-->
+<swiper class="image" autoplay="true" interval="2500"
+duration="1500" circular="true" indicator-dots="true" indicator-color="dark">
+<swiper-item><image mode = "widthFix" src="/pages/picture/image1.jpg"></image></swiper-item>
+    <swiper-item><image mode = "widthFix" src="/pages/picture/image2.png"></image></swiper-item>
+    <swiper-item><image mode = "widthFix" src="/pages/picture/image3 .jpg"></image></swiper-item>
+    <swiper-item><image mode = "widthFix" src="/pages/picture/image4.jpg"></image></swiper-item>
+</swiper>
+
+<view class="cu-item {{menuArrow?'arrow':''}}">
+      
+      <navigator class="content" hover-class="none" url="../Home/Bbs/bbs" open-type="redirect" style= "display:inline ">
+        <text class="cuIcon-edit text-orange"></text>
+        <text class="text-grey">时光论坛</text>
+      </navigator>
+      <!--可发帖的bbs-->
+      <navigator class="content" hover-class="none" url="../Home/Map/map" open-type="redirect" style= "display:inline ">
+        <text class="cuIcon-location text-orange"></text>
+        <text class="text-grey">校友点亮</text>
+      </navigator>
+      <!--地图查找附近的人-->
+      <navigator class="content" hover-class="none" url="../Index/Info/info" open-type="redirect" style= "display:inline "> 
+        <text class="cuIcon-list text-orange"></text>
+        <text class="text-grey">校友登记</text>
+      </navigator>
+      <!--完善个人信息-->
+      <navigator class="content" hover-class="none" url="../Home/Activity/activity" open-type="redirect" style= "display:inline ">
+        <text class="cuIcon-footprint text-orange"></text>
+        <text class="text-grey">活动平台</text>
+      </navigator>
+    </view>
+      <!--多种活动平台-->
+    
+<view class="message">
+    <view class="container">
+        <view class="pubTitle">
+            <view class="txt">院校资讯</view>
+            <navigator class="more">更多</navigator>
+        </view>
+
+        <view class="messageMain">
+          <navigator class="messageItem" wx:for="{{4}}">
+            <view class="pic">
+              <image src="../Picture/小亭子.png"></image>
+            </view>
+            <view class="txt">
+              <view class="title">
+                这里是标题
+              </view>
+              <view class="info">
+                文章作者：房森<text space="ensp">  -  </text>时间：2020-03-09
+              </view>
+            </view>
+          </navigator>
+        </view>
+
+        
+    
+    </view>
+</view>
